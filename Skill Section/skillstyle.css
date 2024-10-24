@@ -1,0 +1,90 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Skill card styling */
+.skill-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 20px; /* Space between the grid items */
+    padding: 20px;
+}
+
+.skill-box {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Skill color shading based on proficiency level */
+.skill1 {
+    background-color: #d6e685; /* Light green for beginner level */
+    grid-column: span 2;
+}
+
+.skill2 {
+    background-color: #8cc665; /* Intermediate level */
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.skill3 {
+    background-color: #44a340; /* Intermediate-advanced level */
+    grid-column: span 1;
+}
+
+.skill4 {
+    background-color: #1e6823; /* Advanced level - darker green */
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.skill5 {
+    background-color: #d6e685; /* Beginner level */
+    grid-column: span 1;
+}
+
+.skill6 {
+    background-color: #8cc665; /* Intermediate level */
+    grid-column: span 1;
+}
+
+.skill7 {
+    background-color: #44a340; /* Intermediate-advanced level */
+    grid-column: span 3;
+}

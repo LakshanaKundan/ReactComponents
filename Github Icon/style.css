@@ -1,0 +1,50 @@
+.icon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icon-container .tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    
+    /* Position the tooltip above the icon */
+    position: absolute;
+    bottom: 125%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Fade-in effect */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .icon-container .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Arrow will appear at the bottom of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .icon-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .icon-container i {
+    font-size: 24px;
+    color: #000; /* Default icon color */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .icon-container:hover i {
+    color: #007bff; /* Color when hovered, e.g., blue */
+  }
+  
