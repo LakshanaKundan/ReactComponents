@@ -4,7 +4,7 @@ import OTPInput from '../OTPInput';
 
 function App() {
   const handleOtpSubmit = (otp) => {
-    alert(`OTP Submitted: ${otp}`);
+    console.log(`Submitted OTP: ${otp}`);
   };
 
   return (

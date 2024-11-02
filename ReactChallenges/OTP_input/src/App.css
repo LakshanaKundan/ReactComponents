@@ -6,6 +6,12 @@
 
 .otp-input-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.otp-fields {
+  display: flex;
   gap: 8px;
   justify-content: center;
   margin-top: 1em;
@@ -18,4 +24,9 @@
   font-size: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.otp-message {
+  margin-top: 1em;
+  font-size: 1.2rem;
 }
