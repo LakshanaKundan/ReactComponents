@@ -48,7 +48,7 @@ export default function OTPInput({ length = 6, onSubmit }) {
   };
 
   return (
-    <div className="otp-input-container">
+    <span className="otp-input-container">
       <p>Generated OTP: {generatedOtp}</p>
       <div className="otp-fields">
         {otp.map((_, index) => (
@@ -65,6 +65,6 @@ export default function OTPInput({ length = 6, onSubmit }) {
         ))}
       </div>
       {message && <p className="otp-message">{message}</p>}
-    </div>
+    </span>
   );
 }

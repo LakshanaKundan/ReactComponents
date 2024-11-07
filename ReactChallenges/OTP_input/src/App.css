@@ -1,10 +1,15 @@
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
-  padding-top: 2em;
   justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-top: 20%;
+
 
 }
+
 
 .otp-input-container {
   display: flex;
@@ -13,6 +18,7 @@
   background-color: rgb(103, 229, 255);
   padding: 2em;
   border-radius: 5em;
+
 }
 
 .otp-fields {
